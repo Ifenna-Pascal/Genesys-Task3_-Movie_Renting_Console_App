@@ -1,7 +1,7 @@
 // this file manages the api call this movie_rent app
 // imports the admin class, responsible for adding, deleting and updating movies in the movie store
 const Admin = require("./Admin");
-const User = require("./Rent")
+const User = require("./User")
 // ADMIN API CALLS
 // iniitialize the admin class
 const Admin1 = new Admin();
@@ -17,6 +17,8 @@ Admin1.addMovie("Kerry", "Romance", 3)
 // @get all movies 
 console.table(Admin1.movie_collection);
 
+// @update movie
+Admin1.updateMovie("Kerry", "cheric", "Romance")
 // @ delete a movie 
 console.log(Admin1.deleteMovie("Berry"))
  

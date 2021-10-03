@@ -22,7 +22,7 @@ module.exports = class Admin  {
         const foundMovie= movie_store.find(x=> x.title === name);
         if(!foundMovie) return "Movie with name  " + name + "  " + "is not found"
         newName && (foundMovie["title"] = newName);
-        newyear && (foundMovie["genre"] = newGenre);
+        newGenre && (foundMovie["genre"] = newGenre);
         newNumber && (foundMovie["number"] = newNumber);
         console.log(" Movie was Updated by  successfully by " + this.name_of_admin + " your admin");
     }
